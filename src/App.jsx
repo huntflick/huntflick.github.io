@@ -22,6 +22,11 @@ function App() {
           </p>
           <ul>
             <li>Custom Video Game Engine</li>
+            <video width="320" height="240" controls>
+              <source src="monkey_with_music.mov" type="video/monkey_with_music.mov">
+              {/* <source src="movie.ogg" type="video/ogg"> */}
+            Your browser does not support the video tag.
+            </video>
             <li>Polyphonic Software Sampler</li>
             <li>Distributed Spreadsheet</li>
           </ul>

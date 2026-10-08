@@ -9,7 +9,7 @@ const Header = () => {
     <header className="app-header">
       <nav className="nav-bar">
         <div className="logo">
-          <h1>DocSign App</h1>
+          <h5>Hunter Flick</h5>
         </div>
     
         {/* Mobile toggle */}

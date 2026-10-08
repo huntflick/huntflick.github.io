@@ -15,8 +15,7 @@ const About = () => (
         time, adding more projects, deeper explanations, or simply improving the look of the site itself.`}
       </p>
       <p>
-        {`If you are interested in my work or are hiring for a position, please reach out to me at 
-        <a href="mailto:hunterflick04@gmail.com">Send Email</a>.`}
+        If you are interested in my work or are hiring for a position, please reach out to me at <a href="mailto:hunterflick04@gmail.com">Send Email</a>.
       </p>
     </div>
   </section>

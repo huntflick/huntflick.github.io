@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Projects from "./Components/Projects/Projects.jsx";
 import About from "./Components/About/About.jsx";
 import Header from "./Components/Header/Header.jsx";
@@ -13,6 +13,12 @@ function App() {
       <Router>
       <Header />
         <Routes>
+          <Route 
+            path="/"
+            element={
+              Navigate to="/projects" replace />
+            }
+          />
           <Route
             path="/projects"
             element={
@@ -26,11 +32,9 @@ function App() {
             }
           />
           <Route
-            path="/*"
+            path="*"
             element={
-              <ProtectedRoute>
-                <Components />
-              </ProtectedRoute>
+              Navigate to="/projects" replace />
             }
           />
         </Routes>

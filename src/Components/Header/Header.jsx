@@ -16,9 +16,9 @@ const Header = () => {
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
 
         <ul className="navigation">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">Projects</Link></li>
-          <li><Link to="/contact">About</Link></li>
+          {/* <li><Link to="/">Home</Link></li> */}
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/about">About</Link></li>
         </ul>
 
         <label htmlFor="nav-toggle" className="nav-toggle-label">

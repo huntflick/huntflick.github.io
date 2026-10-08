@@ -10,12 +10,14 @@ const About = () => (
         My experience includes full stack development, distributed computing, graphics programming, video game engines, and
         hardware design. The bulk of my experience is in C, C++, and Python.`}
       </p>
+      <br /><br />
       <p>
         {`This site is meant to be a portfolio for my projects as well as a project itself. I will update this site in my free
         time, adding more projects, deeper explanations, or simply improving the look of the site itself.`}
       </p>
+      <br /><br />
       <p>
-        If you are interested in my work or are hiring for a position, please reach out to me at <a href="mailto:hunterflick04@gmail.com">Send Email</a>.
+        If you are interested in my work or are hiring for a position, please reach out to me at <a href="mailto:hunterflick04@gmail.com">hunterflick04@gmail.com</a>.
       </p>
     </div>
   </section>

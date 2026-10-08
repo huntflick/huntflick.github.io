@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Projects from "./Components/Projects/Projects.js";
+import About from "./Components/About/About.js";
+import Header from "./Components/Header/Header.js";
 import './App.css'
 
 function App() {
@@ -9,12 +10,37 @@ function App() {
 
   return (
     <>
-      <section id="center">
-        {/* <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div> */}
+      <Router>
+      <Header />
+        <Routes>
+          <Route
+            path="/projects"
+            element={
+                <Projects />
+            }
+          />
+          <Route
+            path="/about"
+            element={
+                <About />
+            }
+          />
+          <Route
+            path="/*"
+            element={
+              <ProtectedRoute>
+                <Components />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </Router>
+
+
+
+
+
+      {/*
         <div>
           <h1>Hunter Flick</h1>
           <p>
@@ -24,21 +50,17 @@ function App() {
             <li>Custom Video Game Engine</li>
             <video width="320" height="240" controls>
               <source src="./videos/monkey_with_music.mp4" type="video/mp4" />
-              {/* <source src="movie.ogg" type="video/ogg"> */}
             Your browser does not support the video tag.
             </video>
             <li>Polyphonic Software Sampler</li>
             <li>Distributed Spreadsheet</li>
           </ul>
         </div>
-        {/* <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button> */}
       </section>
+      */}
+
+
+
 
       {/* <div className="ticks"></div> */}
 
@@ -123,8 +145,8 @@ function App() {
         </div>
       </section> */}
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      {/* <div className="ticks"></div>
+      <section id="spacer"></section> */}
     </>
   )
 }

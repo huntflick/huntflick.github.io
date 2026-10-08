@@ -16,7 +16,7 @@ function App() {
           <Route 
             path="/"
             element={
-              Navigate to="/projects" replace />
+              <Navigate to="/projects" replace />
             }
           />
           <Route
@@ -34,7 +34,7 @@ function App() {
           <Route
             path="*"
             element={
-              Navigate to="/projects" replace />
+              <Navigate to="/projects" replace />
             }
           />
         </Routes>

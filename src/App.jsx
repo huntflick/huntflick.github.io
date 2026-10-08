@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Projects from "./Components/Projects/Projects.js";
-import About from "./Components/About/About.js";
-import Header from "./Components/Header/Header.js";
+import Projects from "./Components/Projects/Projects.jsx";
+import About from "./Components/About/About.jsx";
+import Header from "./Components/Header/Header.jsx";
 import './App.css'
 
 function App() {
